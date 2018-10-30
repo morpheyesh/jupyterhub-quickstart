@@ -6,9 +6,9 @@
             "kind": "ImageStream",
             "apiVersion": "v1",
             "metadata": {
-                "name": "jupyterhub",
+                "name": "jupyterhube",
                 "labels": {
-                    "build": "jupyterhub"
+                    "build": "jupyterhube"
                 }
             },
             "spec": {
@@ -21,9 +21,9 @@
             "kind": "BuildConfig",
             "apiVersion": "v1",
             "metadata": {
-                "name": "jupyterhub",
+                "name": "jupyterhube",
                 "labels": {
-                    "build": "jupyterhub"
+                    "build": "jupyterhube"
                 }
             },
             "spec": {
@@ -38,7 +38,7 @@
                 "source": {
                     "type": "Git",
                     "git": {
-                        "uri": "https://github.com/jupyter-on-openshift/jupyterhub-quickstart.git",
+                        "uri": "https://github.com/morpheyesh/jupyterhub-quickstart.git",
                         "ref": "1.0.4"
                     }
                 },
@@ -55,10 +55,11 @@
                 "output": {
                     "to": {
                         "kind": "ImageStreamTag",
-                        "name": "jupyterhub:latest"
+                        "name": "jupyterhube:latest"
                     }
                 }
             }
         }
     ]
 }
+
