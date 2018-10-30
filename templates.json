@@ -6,7 +6,7 @@
             "kind": "Template",
             "apiVersion": "v1",
             "metadata": {
-                "name": "jupyterhub-builder",
+                "name": "jupyterhubf4-builder",
                 "annotations": {
                     "openshift.io/display-name": "JupyterHub Builder",
                     "description": "Template for creating customised JupyterHub images.",
@@ -17,12 +17,12 @@
             "parameters": [
                 {
                     "name": "JUPYTERHUB_NAME",
-                    "value": "custom-jupyterhub",
+                    "value": "custom-jupyterhubf4",
                     "required": true
                 },
                 {
                     "name": "BUILDER_IMAGE",
-                    "value": "jupyterhub:latest",
+                    "value": "jupyterhubf4:latest",
                     "required": true
                 },
                 {
@@ -106,7 +106,7 @@
             "kind": "Template",
             "apiVersion": "v1",
             "metadata": {
-                "name": "jupyterhub-deployer",
+                "name": "jupyterhubf4-deployer",
                 "annotations": {
                     "openshift.io/display-name": "JupyterHub",
                     "description": "Template for deploying a JupyterHub instance.",
@@ -122,7 +122,7 @@
                 },
                 {
                     "name": "JUPYTERHUB_IMAGE",
-                    "value": "jupyterhub:latest",
+                    "value": "jupyterhubf4:latest",
                     "required": true
                 },
                 {
@@ -570,7 +570,7 @@
             "kind": "Template",
             "apiVersion": "v1",
             "metadata": {
-                "name": "jupyterhub-quickstart",
+                "name": "jupyterhubf4-quickstart",
                 "annotations": {
                     "openshift.io/display-name": "JupyterHub Quickstart",
                     "description": "Template for creating and deploying customised Jupyter notebook images using JupyterHub.",
@@ -586,7 +586,7 @@
                 },
                 {
                     "name": "JUPYTERHUB_IMAGE",
-                    "value": "jupyterhub:latest",
+                    "value": "jupyterhubf4:latest",
                     "required": true
                 },
                 {
