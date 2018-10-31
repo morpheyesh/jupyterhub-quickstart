@@ -6,23 +6,23 @@
             "kind": "Template",
             "apiVersion": "v1",
             "metadata": {
-                "name": "jupyterhuba6-builder",
+                "name": "jupyterhuba7-builder",
                 "annotations": {
-                    "openshift.io/display-name": "jupyterhuba6 Builder",
+                    "openshift.io/display-name": "jupyterhuba7 Builder",
                     "description": "Template for creating customised JupyterHub images.",
                     "iconClass": "icon-python",
-                    "tags": "python,jupyter,jupyterhuba6"
+                    "tags": "python,jupyter,jupyterhuba7"
                 }
             },
             "parameters": [
                 {
                     "name": "JUPYTERHUB_NAME",
-                    "value": "custom-jupyterhuba6",
+                    "value": "custom-jupyterhuba7",
                     "required": true
                 },
                 {
                     "name": "BUILDER_IMAGE",
-                    "value": "jupyterhuba6:latest",
+                    "value": "jupyterhuba7:latest",
                     "required": true
                 },
                 {
@@ -106,7 +106,7 @@
             "kind": "Template",
             "apiVersion": "v1",
             "metadata": {
-                "name": "jupyterhuba6-deployer",
+                "name": "jupyterhuba7-deployer",
                 "annotations": {
                     "openshift.io/display-name": "JupyterHub",
                     "description": "Template for deploying a JupyterHub instance.",
@@ -117,12 +117,12 @@
             "parameters": [
                 {
                     "name": "APPLICATION_NAME",
-                    "value": "jupyterhuba6",
+                    "value": "jupyterhuba7",
                     "required": true
                 },
                 {
                     "name": "JUPYTERHUB_IMAGE",
-                    "value": "jupyterhuba6:latest",
+                    "value": "jupyterhuba7:latest",
                     "required": true
                 },
                 {
@@ -570,7 +570,7 @@
             "kind": "Template",
             "apiVersion": "v1",
             "metadata": {
-                "name": "jupyterhuba6-quickstart",
+                "name": "jupyterhuba7-quickstart",
                 "annotations": {
                     "openshift.io/display-name": "JupyterHub Quickstart",
                     "description": "Template for creating and deploying customised Jupyter notebook images using JupyterHub.",
@@ -581,12 +581,12 @@
             "parameters": [
                 {
                     "name": "APPLICATION_NAME",
-                    "value": "jupyterhuba6",
+                    "value": "jupyterhuba7",
                     "required": true
                 },
                 {
                     "name": "JUPYTERHUB_IMAGE",
-                    "value": "jupyterhuba6:latest",
+                    "value": "jupyterhuba7:latest",
                     "required": true
                 },
                 {
@@ -769,7 +769,7 @@
                                     "automatic": true,
                                     "containerNames": [
                                         "wait-for-database",
-                                        "jupyterhuba6"
+                                        "jupyterhuba7"
                                     ],
                                     "from": {
                                         "kind": "ImageStreamTag",
@@ -823,7 +823,7 @@
                                 ],
                                 "containers": [
                                     {
-                                        "name": "jupyterhuba6",
+                                        "name": "jupyterhuba7",
                                         "image": "${JUPYTERHUB_IMAGE}",
                                         "ports": [
                                             {
@@ -994,7 +994,7 @@
                                         "env": [
                                             {
                                                 "name": "POSTGRESQL_USER",
-                                                "value": "jupyterhuba6"
+                                                "value": "jupyterhuba7"
                                             },
                                             {
                                                 "name": "POSTGRESQL_PASSWORD",
