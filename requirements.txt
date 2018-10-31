@@ -1,6 +1,6 @@
 jupyterhub==0.9.1
 #jupyterhub-kubespawner==0.8.1
-git+https://github.com/morpheyesh/kubespawner.git@master
+git+https://github.com/morpheyesh/kubespawner.git@v0.8.1
 git+https://github.com/jupyterhub/wrapspawner.git@5f2b7075f77d0c1c49066682a8e8adad0dab76db
 #jupyterhub-tmpauthenticator==0.5
 #oauthenticator
