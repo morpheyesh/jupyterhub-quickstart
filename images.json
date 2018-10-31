@@ -6,9 +6,9 @@
             "kind": "ImageStream",
             "apiVersion": "v1",
             "metadata": {
-                "name": "jupyterhuba3",
+                "name": "jupyterhuba4",
                 "labels": {
-                    "build": "jupyterhuba3"
+                    "build": "jupyterhuba4"
                 }
             },
             "spec": {
@@ -21,9 +21,9 @@
             "kind": "BuildConfig",
             "apiVersion": "v1",
             "metadata": {
-                "name": "jupyterhuba3",
+                "name": "jupyterhuba4",
                 "labels": {
-                    "build": "jupyterhuba3"
+                    "build": "jupyterhuba4"
                 }
             },
             "spec": {
@@ -39,7 +39,7 @@
                     "type": "Git",
                     "git": {
                         "uri": "https://github.com/morpheyesh/jupyterhub-quickstart.git",
-                        "ref": "2f3743ced6e1416c7b0b335812d9463afbf81022"
+                        "ref": "b511595286e4d477dc1e7bd5ec6767172e4497c6"
 
                     }
                 },
@@ -56,7 +56,7 @@
                 "output": {
                     "to": {
                         "kind": "ImageStreamTag",
-                        "name": "jupyterhuba3:latest"
+                        "name": "jupyterhuba4:latest"
                     }
                 }
             }
