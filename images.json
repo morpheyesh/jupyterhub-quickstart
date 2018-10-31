@@ -39,7 +39,7 @@
                     "type": "Git",
                     "git": {
                         "uri": "https://github.com/morpheyesh/jupyterhub-quickstart.git",
-                        "ref": "c766cdc5a1c3d23215ea0a9473a8e4de9e8eb8f5"
+                        "ref": "c7738382ab55eb7c6a9b4ed34be13c1ae84167ae"
                     }
                 },
                 "strategy": {
